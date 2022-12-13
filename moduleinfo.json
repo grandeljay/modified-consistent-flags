@@ -1,0 +1,21 @@
+{
+    "archiveName": "grandeljay/consistent-flags",
+
+    "description": "Changes the flag of each language to a consistent style.",
+    "developer": "grandeljay",
+    "name": "Consistent Flags",
+    "shortDescription": "Changes the flag of each language to a consistent style.",
+
+    "developerWebsite": "https://github.com/grandeljay",
+    "website": "https://github.com/grandeljay",
+
+    "sourceDir": "src",
+    "version": "auto",
+    "category": "nocategory",
+    "tags": "language, flag",
+
+    "price": "free",
+    "modifiedCompatibility": [
+        "2.0.7.2"
+    ]
+}

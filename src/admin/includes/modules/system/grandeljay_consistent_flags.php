@@ -27,6 +27,22 @@ class grandeljay_consistent_flags extends StdModule
     public function install()
     {
         parent::install();
+
+        /**
+         * Create placeholders for missing language flags
+         */
+        $languages_query = xtc_db_query(
+            'SELECT *
+               FROM ' . TABLE_LANGUAGES
+        );
+
+        while ($language = xtc_db_fetch_array($languages_query)) {
+            $filepath_icon = DIR_FS_LANGUAGES . $language['directory'] . '/icon.gif';
+
+            if (!file_exists($filepath_icon)) {
+                file_put_contents($filepath_icon, '');
+            }
+        }
     }
 
     public function remove()

@@ -5,7 +5,9 @@
  *
  * A modified-shop Module which changes all of the flags for each language to a consistent style.
  *
- * @author Jay Trees <j.trees@hybridsupply.de>
+ * @author  Jay Trees <consistent-flags@grandels.email>
+ * @link    https://github.com/grandeljay/modified-consistent-flags
+ * @package GrandelJayConsistentFlags
  */
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;

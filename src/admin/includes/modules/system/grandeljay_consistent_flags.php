@@ -16,6 +16,8 @@ require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
 
 class grandeljay_consistent_flags extends StdModule
 {
+    public const VERSION = '0.2.0';
+
     public function __construct()
     {
         $this->init('MODULE_GRANDELJAY_CONSISTENT_FLAGS');

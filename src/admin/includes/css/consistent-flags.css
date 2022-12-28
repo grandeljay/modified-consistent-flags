@@ -1,0 +1,11 @@
+/**
+ * Consistent Flags
+ *
+ * @author  Jay Trees <consistent-flags@grandels.email>
+ * @link    https://github.com/grandeljay/modified-consistent-flags
+ * @package GrandelJayConsistentFlags
+ */
+
+.row_adminbar ul li.language img {
+    height: 12px;
+}

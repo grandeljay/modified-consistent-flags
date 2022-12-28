@@ -1,6 +1,20 @@
 # Changelog
 
-## v0.2.0 - 2022-12-27
+## 0.3.0 - 2022-12-28
+
+### Added
+
+-   CSS rules to properly scale flags (this module will automatically attempt to place it into your currently active template)
+
+### Changed
+
+-   Use SVG instead of PNG files
+
+### Fixed
+
+-   Only the admin flags being replaced (now the language flags on the front-end are also replaced)
+
+## 0.2.0 - 2022-12-27
 
 ### Added
 
@@ -8,7 +22,7 @@
 -   Italian translation
 -   Spanish translation
 
-## v0.1.0 - 2022-12-13
+## 0.1.0 - 2022-12-13
 
 ### Added
 

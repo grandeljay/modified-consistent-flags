@@ -20,7 +20,11 @@ class grandeljay_consistent_flags extends StdModule
 
     public function __construct()
     {
-        $this->init('MODULE_GRANDELJAY_CONSISTENT_FLAGS');
+        if (function_exists('parent::__construct()')) {
+            parent::__construct();
+        } else {
+            $this->init('MODULE_' . strtoupper(self::class));
+        }
     }
 
     public function display()

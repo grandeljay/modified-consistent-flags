@@ -5,7 +5,7 @@
     "name": "Consistent Flags",
     "shortDescription": "Changes the flag of each language to a consistent style.",
     "developerWebsite": "https://github.com/grandeljay",
-    "website": "https://github.com/grandeljay",
+    "website": "https://github.com/grandeljay/modified-consistent-flags",
     "sourceDir": "src",
     "version": "auto",
     "category": "nocategory",

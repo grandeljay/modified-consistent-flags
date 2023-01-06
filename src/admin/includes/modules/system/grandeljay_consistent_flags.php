@@ -55,8 +55,8 @@ class grandeljay_consistent_flags extends StdModule
         /**
          * Create CSS for current template
          */
-        $css_filepath_source = DIR_FS_EXTERNAL . 'grandeljay/consistent-flags/css/consistent-flags.css';
-        $css_filepath_target = DIR_FS_CATALOG . 'templates/' . CURRENT_TEMPLATE . '/css/consistent-flags.css';
+        $css_filepath_source = DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/css/grandeljay_consistent_flags.css';
+        $css_filepath_target = DIR_FS_CATALOG . 'templates/' . CURRENT_TEMPLATE . '/css/grandeljay_consistent_flags.css';
         $css_contents        = file_get_contents($css_filepath_source);
 
         file_put_contents($css_filepath_target, $css_contents);

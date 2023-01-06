@@ -63,6 +63,6 @@ if ('en' === $language_code) {
     $language_code = 'gb';
 }
 
-$language_flag = DIR_FS_EXTERNAL . 'grandeljay/consistent-flags/flags/' . strtoupper($language_code) . '.svg';
+$language_flag = DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/flags/' . strtoupper($language_code) . '.svg';
 
 die(file_get_contents($language_flag));

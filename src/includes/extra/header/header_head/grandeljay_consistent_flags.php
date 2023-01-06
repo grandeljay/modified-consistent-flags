@@ -14,7 +14,7 @@ if (false === $is_enabled) {
     return;
 }
 
-$filename = 'grandeljay/consistent-flags/css/consistent-flags.css';
+$filename = 'grandeljay/consistent_flags/css/grandeljay_consistent_flags.css';
 $version  = hash_file('crc32c', DIR_FS_EXTERNAL . $filename);
 ?>
 <link rel="stylesheet" type="text/css" href="<?php echo DIR_WS_EXTERNAL . $filename ?>?v=<?php echo $version ?>" />

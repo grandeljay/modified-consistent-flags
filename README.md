@@ -20,7 +20,7 @@ Since modified does not provide a clean option to change the language flags, you
 
 ```sh
 ## BOC - grandeljay - Consistent Flags
-RewriteRule ^lang/([[:alpha:]]+)/(admin/images/)?icon.gif$ includes/external/grandeljay/consistent-flags/icon.php?icon=$1 [QSA,L]
+RewriteRule ^lang/([[:alpha:]]+)/(admin/images/)?icon.gif$ includes/external/grandeljay/consistent_flags/icon.php?icon=$1 [QSA,L]
 ## EOC - grandeljay - Consistent Flags
 ```
 

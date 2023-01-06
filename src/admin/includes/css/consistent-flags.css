@@ -6,6 +6,20 @@
  * @package GrandelJayConsistentFlags
  */
 
+/**
+ * Admin bar
+ */
 .row_adminbar ul li.language img {
     height: 12px;
+}
+
+/**
+ * Language tabs
+ */
+.tablangmenu ul li img {
+    height: 1em;
+}
+
+.main img {
+    height: 1em;
 }

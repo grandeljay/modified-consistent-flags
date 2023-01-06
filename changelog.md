@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.1 - 2022-01-06
+
+### Fixed
+
+-   Flag icon size when editing content
+
 ## 0.3.0 - 2022-12-28
 
 ### Added

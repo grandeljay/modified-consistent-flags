@@ -2,13 +2,7 @@
 
 This module does not overwrite any files.
 
-Supported languages are currently:
-
--   English
--   French
--   German
--   Italian
--   Spanish
+The MMLC currently does not copy over hidden files, you will need to manually add the file `/src/includes/external/grandeljay/consistent_flags/.htaccess`
 
 ## Installation
 

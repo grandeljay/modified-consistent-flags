@@ -1,6 +1,17 @@
 # Changelog
 
-## 0.3.1 - 2022-01-06
+## 0.4.1 - 2023-01-06
+
+### Improved
+
+-   Default flags are now returned after deactivating the module (even if you haven't removed the code from the `.htaccess`.)
+-   Assets are now longer loaded when module is inactive
+
+### Changed
+
+-   Many paths have changed to match the modified naming convention, please update your `.htaccess` accordingly.
+
+## 0.3.1 - 2023-01-06
 
 ### Fixed
 

@@ -12,6 +12,35 @@ chdir($_SERVER['DOCUMENT_ROOT']);
 
 require_once 'includes/application_top.php';
 
+/**
+ * Return original flag
+ */
+$is_enabled = defined('MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS') && 'true' === MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS;
+
+if (false === $is_enabled) {
+    if (isset($_SERVER['REQUEST_URI'])) {
+        $filepath = rtrim(DIR_FS_CATALOG, '/') . '/' . ltrim($_SERVER['REQUEST_URI'], '/');
+
+        if (file_exists($filepath)) {
+            $icon = file_get_contents($filepath);
+            $ext  = pathinfo($filepath, PATHINFO_EXTENSION);
+
+            if (!empty($icon)) {
+                http_response_code(302);
+                header('Content-Type: image/' . $ext);
+
+                die($icon);
+            }
+        }
+    }
+
+    http_response_code(404);
+    die();
+}
+
+/**
+ * Return consistent flag
+ */
 $language_directory = $_GET['icon'];
 $language           = xtc_db_fetch_array(
     xtc_db_query(

@@ -1,6 +1,6 @@
 # Consistent Flags
 
-A modified-shop Module which changes all of the flags for each language to a consistent style.
+A modified-shop module which changes all of the flags for each language to a consistent style.
 
 This module does not overwrite any files.
 

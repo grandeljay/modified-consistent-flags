@@ -2,9 +2,10 @@
 
 A modified-shop module which changes all of the flags for each language to a consistent style.
 
-This module does not overwrite any files.
+## Notes
 
-The MMLC currently does not copy over hidden files, you will need to manually add the file `/src/includes/external/grandeljay/consistent_flags/.htaccess`
+-   This module does not overwrite any files.
+-   The MMLC currently does not copy over hidden files, you will need to manually add the file `/src/includes/external/grandeljay/consistent_flags/.htaccess`
 
 ## Installation
 

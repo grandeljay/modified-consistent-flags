@@ -17,4 +17,4 @@ RewriteRule ^lang/([[:alpha:]]+)/(admin/images/)?icon.gif$ includes/external/gra
 ## EOC - grandeljay - Consistent Flags
 ```
 
-You may place this anywhere (preferably right at the bottom). Just make sure it's still inside `<IfModule mod_rewrite.c></IfModule>`.
+You may place this anywhere (preferably right at the bottom). Just make sure it's still inside `<IfModule mod_rewrite.c>` `</IfModule>`.

@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 5 3">
-	<desc>Flag of Germany</desc>
-	<rect id="black_stripe" width="5" height="3" y="0" x="0" fill="#000"/>
-	<rect id="red_stripe" width="5" height="2" y="1" x="0" fill="#D00"/>
-	<rect id="gold_stripe" width="5" height="1" y="2" x="0" fill="#FFCE00"/>
+<svg
+   width="18"
+   height="10.8"
+   viewBox="0 0 0.09 0.054000001"
+   version="1.1"
+   id="svg7"
+   sodipodi:docname="DE.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     id="namedview9"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.68"
+     inkscape:cx="52.840909"
+     inkscape:cy="39.876033"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg7" />
+  <desc
+     id="desc2">Flag of Germany</desc>
+  <rect
+     id="black_stripe"
+     width="0.090000004"
+     height="0.054000001"
+     y="0"
+     x="0"
+     fill="#000000"
+     style="stroke-width:0.018" />
+  <rect
+     id="red_stripe"
+     width="0.090000004"
+     height="0.035999998"
+     y="0.017999999"
+     x="0"
+     fill="#dd0000"
+     style="stroke-width:0.018" />
+  <rect
+     id="gold_stripe"
+     width="0.090000004"
+     height="0.017999999"
+     y="0.035999998"
+     x="0"
+     fill="#ffce00"
+     style="stroke-width:0.018" />
 </svg>

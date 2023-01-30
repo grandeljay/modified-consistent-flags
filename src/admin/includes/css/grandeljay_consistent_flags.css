@@ -23,11 +23,3 @@
 .main img {
     height: 1em;
 }
-
-/**
- * Info box content
- */
-.infoBoxContent > img {
-    width: 18px;
-    height: auto;
-}

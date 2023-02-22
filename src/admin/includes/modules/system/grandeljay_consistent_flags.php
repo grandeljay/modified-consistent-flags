@@ -8,6 +8,9 @@
  * @author  Jay Trees <consistent-flags@grandels.email>
  * @link    https://github.com/grandeljay/modified-consistent-flags
  * @package GrandelJayConsistentFlags
+ *
+ * @phpcs:disable PSR1.Classes.ClassDeclaration.MissingNamespace
+ * @phpcs:disable Squiz.Classes.ValidClassName.NotCamelCaps
  */
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;

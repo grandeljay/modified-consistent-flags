@@ -23,3 +23,11 @@
 .main img {
     height: 1em;
 }
+
+/**
+ * Box content
+ */
+.infoBoxHeadingTitle > img {
+    height: 1em;
+    vertical-align: middle;
+}

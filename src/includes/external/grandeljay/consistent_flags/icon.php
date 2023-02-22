@@ -42,13 +42,12 @@ if (false === $is_enabled) {
  * Return consistent flag
  */
 $language_directory = $_GET['icon'];
-$language           = xtc_db_fetch_array(
-    xtc_db_query(
-        'SELECT *
-           FROM ' . TABLE_LANGUAGES . '
-          WHERE `directory` = "' . $language_directory . '"'
-    )
+$language_query     = xtc_db_query(
+    'SELECT *
+       FROM ' . TABLE_LANGUAGES . '
+      WHERE `directory` = "' . $language_directory . '"'
 );
+$language           = xtc_db_fetch_array($language_query);
 
 if (null === $language) {
     http_response_code(404);

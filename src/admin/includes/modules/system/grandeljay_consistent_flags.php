@@ -3,7 +3,8 @@
 /**
  * Consistent Flags
  *
- * A modified-shop Module which changes all of the flags for each language to a consistent style. Uses https://github.com/fonttools/region-flags.
+ * A modified-shop Module which changes all of the flags for each language to a
+ * consistent style. Uses https://github.com/fonttools/region-flags.
  *
  * @author  Jay Trees <consistent-flags@grandels.email>
  * @link    https://github.com/grandeljay/modified-consistent-flags

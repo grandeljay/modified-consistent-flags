@@ -22,7 +22,7 @@ class grandeljay_consistent_flags extends StdModule
 
     public function __construct()
     {
-        parent::__construct();
+        parent::__construct(self::class);
 
         $this->checkForUpdate(true);
     }

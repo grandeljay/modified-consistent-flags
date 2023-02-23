@@ -16,8 +16,6 @@
 
 use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
-require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
-
 class grandeljay_consistent_flags extends StdModule
 {
     public const VERSION = '0.4.2';

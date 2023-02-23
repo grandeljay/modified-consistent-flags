@@ -20,11 +20,13 @@ require_once DIR_FS_DOCUMENT_ROOT . '/vendor-no-composer/autoload.php';
 
 class grandeljay_consistent_flags extends StdModule
 {
-    public const VERSION = '0.4.1';
+    public const VERSION = '0.4.2';
 
     public function __construct()
     {
         parent::__construct();
+
+        $this->checkForUpdate(true);
     }
 
     public function display()
@@ -60,6 +62,17 @@ class grandeljay_consistent_flags extends StdModule
         $css_contents        = file_get_contents($css_filepath_source);
 
         file_put_contents($css_filepath_target, $css_contents);
+    }
+
+    protected function updateSteps()
+    {
+        if (version_compare($this->getVersion(), self::VERSION, '<')) {
+            $this->setVersion(self::VERSION);
+
+            return self::UPDATE_SUCCESS;
+        }
+
+        return self::UPDATE_NOTHING;
     }
 
     public function remove()

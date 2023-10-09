@@ -8,18 +8,22 @@
  * @package GrandelJayConsistentFlags
  */
 
-chdir($_SERVER['DOCUMENT_ROOT']);
+ob_start();
 
-require_once 'includes/application_top.php';
+$shop_root = realpath('../../../..');
+
+chdir($shop_root);
+
+require_once $shop_root . '/includes/application_top.php';
+
+ob_get_clean();
 
 /**
  * Return original flag
  */
-$is_enabled = defined('MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS') && 'true' === MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS;
-
-if (false === $is_enabled) {
+if (rth_is_module_disabled('MODULE_GRANDELJAY_CONSISTENT_FLAGS')) {
     if (isset($_SERVER['REQUEST_URI'])) {
-        $filepath = rtrim(DIR_FS_CATALOG, '/') . '/' . ltrim($_SERVER['REQUEST_URI'], '/');
+        $filepath = rtrim($shop_root, '/') . '/' . ltrim($_SERVER['REQUEST_URI'], '/');
 
         if (file_exists($filepath)) {
             $icon = file_get_contents($filepath);

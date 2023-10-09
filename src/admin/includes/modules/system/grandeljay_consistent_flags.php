@@ -18,7 +18,7 @@ use RobinTheHood\ModifiedStdModule\Classes\StdModule;
 
 class grandeljay_consistent_flags extends StdModule
 {
-    public const VERSION = '0.5.4';
+    public const VERSION = '0.5.5';
 
     public function __construct()
     {

@@ -18,3 +18,7 @@ RewriteRule ^lang/([[:alpha:]]+)/(admin/images/)?.+\.(gif|png|svg|jpg|jpeg)$ inc
 ```
 
 You may place this anywhere (preferably right at the bottom). Just make sure it's still inside `<IfModule mod_rewrite.c>` `</IfModule>`.
+
+## Flags
+
+https://github.com/gosquared/flags / https://www.gosquared.com/resources/flag-icons/

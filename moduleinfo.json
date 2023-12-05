@@ -23,5 +23,10 @@
     },
     "mmlc": {
         "version": "^1.20.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grandeljay\\ConsistentFlags\\": "src-mmlc"
+        }
     }
 }

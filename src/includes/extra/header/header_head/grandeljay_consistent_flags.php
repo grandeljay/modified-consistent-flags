@@ -8,9 +8,9 @@
  * @package GrandelJayConsistentFlags
  */
 
-$is_enabled = defined('MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS') && 'true' === MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS;
+namespace Grandeljay\ConsistentFlags;
 
-if (false === $is_enabled) {
+if (\rth_is_module_disabled(Constants::MODULE_NAME)) {
     return;
 }
 

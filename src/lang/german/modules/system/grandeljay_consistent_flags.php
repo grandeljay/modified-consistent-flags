@@ -8,7 +8,9 @@
  * @package GrandelJayConsistentFlags
  */
 
-define('MODULE_GRANDELJAY_CONSISTENT_FLAGS_TITLE', 'grandeljay - Einheitliche Flaggen');
-define('MODULE_GRANDELJAY_CONSISTENT_FLAGS_LONG_DESCRIPTION', 'Ersetzt die flaggen von allen Sprachpaketen mit einheitlichen Flaggen, mit dem gleichen Stil.');
-define('MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS_TITLE', 'Modul aktivieren?');
-define('MODULE_GRANDELJAY_CONSISTENT_FLAGS_STATUS_DESC', 'Sollen einheitliche Flaggen verwendet werden?');
+namespace Grandeljay\ConsistentFlags;
+
+\define(Constants::MODULE_NAME . '_TITLE', 'grandeljay - Einheitliche Flaggen');
+\define(Constants::MODULE_NAME . '_LONG_DESCRIPTION', 'Ersetzt die flaggen von allen Sprachpaketen mit einheitlichen Flaggen, mit dem gleichen Stil.');
+\define(Constants::MODULE_NAME . '_STATUS_TITLE', 'Modul aktivieren?');
+\define(Constants::MODULE_NAME . '_STATUS_DESC', 'Sollen einheitliche Flaggen verwendet werden?');

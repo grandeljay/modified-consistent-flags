@@ -8,6 +8,8 @@
  * @package GrandelJayConsistentFlags
  */
 
+namespace Grandeljay\ConsistentFlags;
+
 ob_start();
 
 $shop_root = realpath('../../../..');
@@ -21,7 +23,7 @@ ob_get_clean();
 /**
  * Return original flag
  */
-if (rth_is_module_disabled('MODULE_GRANDELJAY_CONSISTENT_FLAGS')) {
+if (rth_is_module_disabled(Constants::MODULE_NAME)) {
     if (isset($_SERVER['REQUEST_URI'])) {
         $filepath = rtrim($shop_root, '/') . '/' . ltrim($_SERVER['REQUEST_URI'], '/');
 

@@ -60,13 +60,8 @@ if (null === $language) {
     die();
 }
 
-$language_code = $language['code'];
-
-if ('en' === $language_code) {
-    $language_code = 'gb';
-}
-
-$language_flag      = \sprintf(DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/node_modules/flag-icons/flags/4x3/%s.svg', $language_code);
+$language_code      = $language['code'];
+$language_flag      = \sprintf(DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/flags/%s.png', $language_code);
 $language_flag_mime = mime_content_type($language_flag);
 
 header('Content-Type: ' . $language_flag_mime);

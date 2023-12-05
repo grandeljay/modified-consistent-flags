@@ -62,7 +62,7 @@ class grandeljay_consistent_flags extends StdModule
         file_put_contents($css_filepath_target, $css_contents);
     }
 
-    protected function updateSteps()
+    protected function updateSteps(): int
     {
         if (version_compare($this->getVersion(), self::VERSION, '<')) {
             $this->setVersion(self::VERSION);

@@ -29,11 +29,11 @@ if (rth_is_module_disabled(Constants::MODULE_NAME)) {
 
         if (file_exists($filepath)) {
             $icon = file_get_contents($filepath);
-            $ext  = pathinfo($filepath, PATHINFO_EXTENSION);
+            $mime = mime_content_type($filepath);
 
             if (!empty($icon)) {
                 http_response_code(302);
-                header('Content-Type: image/' . $ext);
+                header('Content-Type: ' . $mime);
 
                 die($icon);
             }
@@ -60,14 +60,14 @@ if (null === $language) {
     die();
 }
 
-header('Content-Type: image/svg+xml');
-
 $language_code = $language['code'];
 
 if ('en' === $language_code) {
     $language_code = 'gb';
 }
 
-$language_flag = DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/flags/' . strtoupper($language_code) . '.svg';
+$language_flag      = DIR_FS_EXTERNAL . 'grandeljay/consistent_flags/flags/' . strtoupper($language_code) . '.svg';
+$language_flag_mime = mime_content_type($language_flag);
 
+header('Content-Type: ' . $language_flag_mime);
 die(file_get_contents($language_flag));

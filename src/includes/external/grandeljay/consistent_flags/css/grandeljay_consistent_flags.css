@@ -6,6 +6,10 @@
  * @package GrandelJayConsistentFlags
  */
 
+#admin ul li.language {
+    padding-top: 6px;
+}
+
 #admin ul li.language img {
-    height: 12px;
+    height: 24px;
 }

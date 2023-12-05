@@ -10,18 +10,23 @@
  * Admin bar
  */
 .row_adminbar ul li.language img {
-    height: 12px;
+    float: none;
+    width: auto;
+    height: 100%;
+    padding-top: 0;
 }
 
 /**
  * Language tabs
  */
 .tablangmenu ul li img {
-    height: 1em;
+    height: 2em;
 }
 
 .main img {
-    height: 1em;
+    height: 2em;
+    vertical-align: middle;
+    margin-bottom: 3.4px;
 }
 
 /**

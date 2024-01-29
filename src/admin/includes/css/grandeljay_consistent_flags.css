@@ -51,3 +51,13 @@
     position: relative;
     top: -2px;
 }
+
+/**
+ * Config
+ */
+.tableConfig .dataTableConfig img[src^="/lang/"] {
+    vertical-align: middle;
+    height: calc(1em + 12px + 16px);
+    position: relative;
+    top: -2px;
+}

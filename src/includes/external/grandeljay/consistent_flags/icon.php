@@ -24,8 +24,24 @@ ob_get_clean();
  * Return original flag
  */
 if (rth_is_module_disabled(Constants::MODULE_NAME)) {
+    $languages      = [];
+    $language_query = xtc_db_query(
+        \sprintf(
+            'SELECT *
+            FROM `%s`',
+            \TABLE_LANGUAGES
+        )
+    );
+
+    while ($language = xtc_db_fetch_array($language_query)) {
+        $key = $language['directory'];
+
+        $languages[$key] = $language;
+    }
+
     if (isset($_SERVER['REQUEST_URI'])) {
-        $filepath = rtrim($shop_root, '/') . '/' . ltrim($_SERVER['REQUEST_URI'], '/');
+        $directory = \explode('/', $_SERVER['REQUEST_URI'])[2] ?? 'Unknown';
+        $filepath  = rtrim($shop_root, '/') . \dirname($_SERVER['REQUEST_URI']) . '/' . $languages[$directory]['image'];
 
         if (file_exists($filepath)) {
             $icon = file_get_contents($filepath);
